@@ -1,5 +1,17 @@
 {
-    "public": "Project",
-    "cleanUrls": true
-}
+    "rewrites": [
+      {
+        "source": "/styles/(.*)",
+        "destination": "/Project/styles/$1"
+      },
+      {
+        "source": "/scripts/(.*)",
+        "destination": "/Project/scripts/$1"
+      },
+      {
+        "source": "/",
+        "destination": "/Project/index.html"
+      }
+    ]
+  }
   
